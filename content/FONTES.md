@@ -18,7 +18,7 @@ ACF (SBTB), NTLH, Bíblia King James em português.
 
 `entradas/*.json` são geradas por `scripts/gerar-entradas.ts` (Claude Opus 5)
 e revisadas manualmente. Cada entrada traz o texto Almeida **e** uma paráfrase
-própria; a interface escolhe qual exibir via `NEXT_PUBLIC_TEXTO_MODO`.
+própria; a interface mostra a Almeida em destaque e a paráfrase abaixo (`NEXT_PUBLIC_TEXTO_MODO=ambos`).
 
 ## Correções aplicadas ao texto-fonte
 

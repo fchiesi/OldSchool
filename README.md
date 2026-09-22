@@ -29,7 +29,7 @@ npm run conteudo:entradas                  # gera o restante (retomável)
 ```
 
 `NEXT_PUBLIC_TEXTO_MODO` controla o que aparece nas páginas: `almeida`,
-`parafrase` ou `comparar` (abas com os dois, para decidir).
+`parafrase` ou `ambos` (padrão: Almeida em destaque, paráfrase abaixo).
 
 ## Estrutura
 
