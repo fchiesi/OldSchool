@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* Tema escuro é o padrão; o claro é ativado com data-theme="light" no <html>. */
+:root {
+  --bg: #17140f;
+  --bg-elevated: #211c15;
+  --fg: #f0e9df;
+  --fg-muted: #a89d8e;
+  --accent: #d9a86c;
+  --accent-soft: #2d251a;
+  --border: #352d22;
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --bg: #faf7f2;
+  --bg-elevated: #ffffff;
+  --fg: #221d16;
+  --fg-muted: #6b6257;
+  --accent: #8a5a2b;
+  --accent-soft: #f1e6d8;
+  --border: #e6ddd0;
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-fg: var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-border: var(--border);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-lora);
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
